@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Configurations>Debug;Release;UIA3;UIA2</Configurations>
+        <Platforms>AnyCPU</Platforms>
+        <PackageId>kDg.FlaUInspect</PackageId>
+        <Authors>K. Usenko {kDg}</Authors>
+        <Description>Inspect Windows UI tool</Description>
+        <ApplicationIcon>kDg.FlaUInspect.ico</ApplicationIcon>
+        <PackageIcon>kDg.FlaUInspect.png</PackageIcon>
+        <AssemblyName>kDg.FlaUInspect</AssemblyName>
+        <RootNamespace>kDg.FlaUInspect</RootNamespace>
+        <Product>kDg.FlaUInspect</Product>
+        <Version>2.0.0</Version>
+        <Company>K. Usenko {kDg}</Company>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'UIA2' ">
+      <DefineConstants>TRACE;AUTOMATION_UIA2</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'UIA3' ">
+      <DefineConstants>TRACE;AUTOMATION_UIA3</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FlaUI.Core" Version="5.0.0" />
+        <PackageReference Include="FlaUI.UIA2" Version="5.0.0" />
+        <PackageReference Include="FlaUI.UIA3" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="Resources\Icons.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Resources\RibbonIcons.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Resources\DetailsIcons.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Resources\ChooseVersionIcons.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="kDg.FlaUInspect.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+    </ItemGroup>
+
+</Project>
