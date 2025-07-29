@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>kDg.FlaUInspect</id>
+    <version>2.0.0</version>
+    <title>kDg.FlaUInspect</title>
+    <authors>K. Usenko {kDg}</authors>
+    <owners>K. Usenko {kDg}</owners>
+    <projectUrl>https://github.com/dualbios/kDg.FlaUInspect</projectUrl>
+    <licenseUrl>https://github.com/dualbios/kDg.FlaUInspect/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FlaUInspect is a UI Automation inspection tool for Windows applications, useful for accessibility and automation testing.</description>
+    <summary>Inspect and analyze UI Automation elements in Windows applications.</summary>
+    <tags>uiautomation inspect accessibility windows testing automation</tags>
+    <releaseNotes>
+      - Init version 2.0.0
+      - Improved UI Automation element inspection
+      - Enhanced accessibility features
+      - Bug fixes and performance improvements
+      - Full refactoring of the codebase
+      - Updated to FlaUI 5.0.0
+      - Added support for .NET 8.0
+      - Updated icons and resources
+      - Improved error handling and logging
+      - Added new features for better user experience
+      - Enhanced documentation and user guide
+      - Improved performance and stability
+      - Fixed various issues 
+      - Updated dependencies
+    </releaseNotes>
+    <copyright>K. Usenko {kDg}</copyright>
+  </metadata>
+  <files>
+    <file src="src\FlaUInspect\bin\Debug\net8.0-windows10.0.19041.0\**" target="tools" />
+  </files>
+</package>

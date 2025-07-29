@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net8.0-windows</TargetFramework>
+        <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
         <UseWPF>true</UseWPF>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -18,15 +18,23 @@
         <Product>kDg.FlaUInspect</Product>
         <Version>2.0.0</Version>
         <Company>K. Usenko {kDg}</Company>
-        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>bin\Debug\</OutputPath>
+      <AssemblyName>kDg.FlaUInspect</AssemblyName>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'UIA2' ">
       <DefineConstants>TRACE;AUTOMATION_UIA2</DefineConstants>
+      <OutputPath>bin\UIA2\</OutputPath>
+      <AssemblyName>kDg.FlaUInspect.UIA2</AssemblyName>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'UIA3' ">
       <DefineConstants>TRACE;AUTOMATION_UIA3</DefineConstants>
+      <OutputPath>bin\UIA3\</OutputPath>
+      <AssemblyName>kDg.FlaUInspect.UIA3</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
