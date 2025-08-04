@@ -7,7 +7,7 @@
         xmlns:converters="clr-namespace:kDg.FlaUInspect.Core.Converters"
         xmlns:viewModels="clr-namespace:kDg.FlaUInspect.ViewModels"
         xmlns:models="clr-namespace:kDg.FlaUInspect.Models"
-        Title="FlaUInspect"
+        Title="kDg.FlaUInspect"
         d:DesignHeight="350"
         d:DesignWidth="500"
         ResizeMode="CanResizeWithGrip"

@@ -73,4 +73,8 @@
       </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="LICENSE" />
+    </ItemGroup>
+
 </Project>
