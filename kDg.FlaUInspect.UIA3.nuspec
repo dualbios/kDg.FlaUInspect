@@ -7,7 +7,10 @@
     <authors>K. Usenko {kDg}</authors>
     <owners>K. Usenko {kDg}</owners>
     <projectUrl>https://github.com/dualbios/kDg.FlaUInspect</projectUrl>
+    <projectSourceUrl>https://github.com/dualbios/kDg.FlaUInspect</projectSourceUrl>
     <licenseUrl>https://github.com/dualbios/kDg.FlaUInspect/blob/main/LICENSE</licenseUrl>
+    <iconUrl>https://github.com/dualbios/kDg.FlaUInspect/blob/main/src/FlaUInspect/kDg.FlaUInspect.ico</iconUrl>
+    <packageSourceUrl>https://community.chocolatey.org/packages/kDg.FlaUInspect/2.0.0</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>FlaUInspect is a UI Automation inspection tool for Windows applications, useful for accessibility and automation testing.</description>
     <summary>Inspect and analyze UI Automation elements in Windows applications.</summary>
@@ -32,5 +35,7 @@
   </metadata>
   <files>
     <file src="src\FlaUInspect\bin\UIA3\net8.0-windows10.0.19041.0\**" target="tools" />
+    <file src="LICENSE" target="tools\LICENSE" />
+    <file src="VERIFICATION" target="tools\VERIFICATION" />
   </files>
 </package>
