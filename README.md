@@ -3,6 +3,8 @@
 kDg.FlaUInspect is a tool for inspecting UI Automation elements on Windows. It is based on FlaUInspect and provides enhanced features for accessibility and UI testing.
 The tool is based on FlaUInspect but fully refactored and uses modern .NET8.
 
+<img width="605" height="445" alt="Image" src="https://github.com/user-attachments/assets/99a62848-dc04-449f-9486-7f41d21d17fe" />
+
 ## Features
 
 - Inspect UI Automation trees
