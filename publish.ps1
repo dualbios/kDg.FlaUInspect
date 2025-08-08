@@ -6,6 +6,6 @@ Compress-Archive -Path .\src\publish\Debug\* -DestinationPath .\src\publish\FlaU
 Compress-Archive -Path .\src\publish\UIA2\* -DestinationPath .\src\publish\FlaUInspect.UIA2.zip
 Compress-Archive -Path .\src\publish\UIA3\* -DestinationPath .\src\publish\FlaUInspect.UIA3.zip
 
-choco pack kDg.FlaUInspect.nuspec  -v --out .\src\publish\
-choco pack kDg.FlaUInspect.UIA2.nuspec  -v --out .\src\publish\
-choco pack kDg.FlaUInspect.UIA3.nuspec  -v --out .\src\publish\
+nuget pack kDg.FlaUInspect.nuspec -Verbosity detailed -OutputDirectory .\src\publish\
+nuget pack kDg.FlaUInspect.UIA2.nuspec -Verbosity detailed -OutputDirectory .\src\publish\
+nuget pack kDg.FlaUInspect.UIA3.nuspec -Verbosity detailed -OutputDirectory .\src\publish\
